@@ -1,0 +1,16 @@
+<?php
+
+namespace App;
+
+use Illuminate\Database\Eloquent\Model;
+
+class Rating extends Model
+{
+    protected $table = 'ratings';
+
+    public function games()
+    {
+        return $this->belongsTo('App\Game', 'id', 'rateable_id');
+    }
+
+}

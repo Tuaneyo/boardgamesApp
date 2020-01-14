@@ -1,0 +1,347 @@
+/*  #c77d48 */
+
+.calendar{
+    height: 250px;
+}
+
+.cal-head {
+    padding: .5em 2em;
+    background: #d86d42;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.cal-body {
+    padding: .50em;
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    background: #ededed;
+    font-weight: 900;
+}
+
+.error-wrap .error-icon,.error-wrap .error-msg{
+    padding: .5em 1rem;
+    background: #c08f6cc7;
+    color: white;
+}
+
+.battles-row-1{
+    max-height: 260px;
+}
+
+.battles-row-2, .re-game-2{
+    max-height: 360px;
+}
+
+.games-wrap{
+    height: 200px;
+}
+
+/* stepper */
+
+.custom-select{
+    background-size: 15px 100%;
+    color: #343a40;
+}
+
+.custom-select option{
+    color: #c77d48;
+}
+
+.custom-select option:disabled {
+    background: rgba(0,0,0,.1);
+    color: white;
+}
+
+
+.big-select{
+    padding: 1em;
+    height: auto;
+    font-size: 20px;
+    border-color: #eeeeee;
+    border-bottom: 1px solid #d98f5ac4 !important;
+    box-shadow: 1px 9px 0px -6px #d094693d, 0px 9px 12px -7px #c77d483b;
+}
+
+.existing-user{
+    display: none;
+}
+
+.existing-user.active{
+    display: block !important;
+}
+
+.temp-user{
+    display: none;
+}
+
+.temp-user.active{
+    display: flex !important;
+}
+
+.big-select .input-group-text{
+    padding: 1.5em !important;
+}
+
+ul.stepper {
+    counter-reset: section;
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin: 1em -1.5rem;
+    padding: 1.5rem;
+}
+
+ul.stepper .step:not(:last-of-type).active {
+    margin-bottom: 2.25rem;
+}
+ul.stepper>li:not(:last-of-type) {
+    margin-bottom: .625rem;
+    -webkit-transition: margin-bottom .4s;
+    -o-transition: margin-bottom .4s;
+    transition: margin-bottom .4s;
+}
+ul.stepper .step {
+    position: relative;
+    list-style: none;
+}
+
+ul.stepper .step-title:hover {
+    background-color: rgb(238, 238, 238);
+
+}
+
+ul.stepper .step:first-child .previous-step{
+    display: none !important;
+}
+
+
+ul.stepper .step:first-child .step-actions{
+    justify-content: flex-end !important;
+}
+
+
+
+ul.stepper .step.active .step-title {
+    font-weight: 500;
+}
+ul.stepper .step-title {
+    margin: 0 -1.3rem;
+    cursor: pointer;
+    padding: 1.7rem 2.75rem 1.5rem 7rem;
+    display: block;
+    font-size: 27px;
+    z-index: 1;
+}
+
+
+ul.stepper .step-title:after {
+    content: attr(data-step-label);
+    display: block;
+    position: absolute;
+    font-size: .8rem;
+    color: #424242;
+    font-weight: 400;
+    font-family: Roboto, 'sans-serif';
+    text-transform: uppercase;
+}
+
+ul.stepper .step-new-content {
+    position: relative;
+    display: none;
+    height: -webkit-calc(100% - 132px);
+    height: calc(100% - 132px);
+    width: inherit;
+    overflow: visible;
+    margin-left: 90px;
+    margin-right: 24px;
+}
+
+ul.stepper .step:before {
+    position: absolute;
+    top: 1rem;
+    content: attr(data-step-roman);
+    height: 75px;
+    width: 75px;
+    color: #c77d48;
+    background-color: #eeeeee;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 30px;
+    z-index: 2;
+
+}
+
+ul.stepper>.step.active:not(:last-child):after {
+    height: 93%;
+    height: -webkit-calc(100% - 12px);
+    height: calc(100% - 12px);
+}
+
+ul.stepper>.step:not(:last-of-type):after {
+    content: '';
+    position: absolute;
+    top: 5.5rem;
+    left: 37px;
+    width: .0625rem;
+    height: 40%;
+    height: -webkit-calc(100% - 38px);
+    height: calc(100% - 38px);
+    background-color: rgba(0,0,0,.1);
+    -webkit-transition: all .4s;
+    -o-transition: all .4s;
+    transition: all .4s;
+}
+
+/* Stepper end */
+
+
+.players-wrap{
+    border: 1px solid grey;
+    color: grey;
+    padding: 3em;
+    cursor: pointer;
+    background: white;
+}
+
+.players-wrap:hover{
+    border-color: #c77d48;
+    color: #c77d48;
+    transition: all 7s;
+    -webkit-transition: all .7s;
+}
+
+.players-wrap .players-icon{
+    font-size: 50px;
+}
+
+.submit-game{
+    border: unset !important;
+    width: 100%;
+    height: 100%;
+    box-shadow: unset !important;
+}
+
+.status-hr, .status-icon{
+    background: #cdcdcd;
+}
+
+.status-hr{
+    border-width: 5px;
+}
+
+.status-hr.active{
+    border-color: #c77d48;
+}
+
+.status-text.active{
+    color: #c77d48;
+}
+
+.status-icon{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    top: -7px;
+}
+
+.status-icon.active{
+    background:  #c77d48 !important;
+}
+
+.bg-home-color-brown{
+   background:  #c77d48;
+}
+
+.bg-slight{
+    background: #eeeeee;
+}
+
+.app-func-list .func-content{
+    margin: auto 2px;
+}
+
+.layer-form-wrap{
+    position: relative;
+    top: -100px;
+}
+
+.ownCard{
+    border-radius: 0;
+    padding: 1em;
+    color: grey;
+}
+
+.ownCard  label, .form-heading-text{
+    font-size: 20px;
+    text-transform: uppercase;
+    color:grey;
+}
+
+.battle-select{
+    padding: .5em;
+    width: 100%;
+    border-radius: 0;
+}
+
+
+.ownCard input.form-control {
+    border-radius: 0;
+}
+
+.ownCard .card-body{
+    padding:0;
+}
+
+.ownCard .form-group{
+    padding: .75rem;
+}
+
+.ownCard .input-group-text {
+    border-radius: 0;
+    background: white;
+    color: #212121;
+}
+
+.battle-wrap{
+    padding: 1em;
+    background: white;
+}
+
+.battle-icon {
+    font-size: 50px;
+}
+
+.battle-wrap:hover{
+    background: #808080;
+    color:white;
+}
+
+.battleCard{
+    padding-top:0;
+    padding-bottom: 0;
+}
+
+.btn-battle {
+    padding: .5em 1em;
+    background: #787878;
+    color: white;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    text-transform: uppercase;
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+}
+.btn-battle:hover{
+    background: #2b2b2b;
+    color: white;
+    transition: all .5s;
+    -webkit-transition: all .5s;
+}

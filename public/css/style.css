@@ -1,0 +1,442 @@
+@import "pages/home.css";
+@import "pages/battle.css";
+@import "pages/game.css";
+@import "pages/score.css";
+@import "pages/preview.css";
+@import "pages/leaderboard.css";
+/* Required height of parents of the Half Page Carousel for proper displaying carousel itself */
+/* Brown #c77d48 */
+
+html,
+body,
+.view {
+  height: 100%;
+  width: 100% ;
+  background: white;
+  /*font-family: 'Anton', sans-serif;*/
+  font-family: 'Staatliches', cursive;
+}
+
+#modalForm .modal-dialog{
+  position: relative;
+  top: 150px;
+}
+
+#back-btn:hover{
+  color: #212121 !important;
+  border-color: #212121 !important;
+  transition: all .7s;
+  -webkit-transition: all .7s;
+}
+
+.clear-rating{
+  display: none !important;
+}
+
+.home-color-black{
+  color: #212121;
+}
+
+.rating-container .filled-stars{
+  text-shadow: 0px 0px 4px #999;
+  -webkit-text-stroke: 1px #ecd268;
+}
+
+.rating-xs{
+  font-size: 1.5em;
+}
+
+.form-control:focus {
+  color: #c77d48 !important;
+  border-color: #c77d48 ;
+  box-shadow: 0 0 0 0.2rem rgba(199, 125, 72, .25);
+}
+
+.pt-home{
+  padding-top: 80px;
+}
+
+.form-wrap .input-group-prepend {
+  position: absolute;
+  z-index: 999;
+  right: 0;
+}
+
+.text-black{
+  color: black !important;
+}
+
+.rgba-light{
+  background: rgba(0,0,0,.1);
+}
+
+.rgba-light-50{
+  background: rgba(0,0,0,.5);
+}
+
+.btn-icon:after {
+  content: '+';
+  position: absolute;
+  width: 50px;
+  background: #c88859;
+  right: -50px;
+  top: 0;
+  height: 100%;
+  border-left: 1px solid #dddddd;
+  font-size: 18px;
+  font-weight: 900;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.ft-15{
+  font-size: 15px;
+}
+
+.ft-10{
+  font-size: 10px;
+}
+
+.ft-17{
+  font-size: 17px;
+}
+
+.ft-18{
+  font-size: 18px;
+}
+
+.ft-20{
+  font-size: 20px !important;
+}
+
+.ft-25{
+  font-size: 25px;
+}
+
+.ft-30{
+  font-size: 30px;
+}
+
+.border-white{
+  border: 1px solid white;
+}
+
+.home-bottom::after{
+  content: '';
+  position: absolute;
+  width: 100px;
+  height: 4px;
+  background: #c47b47;
+}
+
+.font-roboto{
+  font-family: 'Roboto' !important;
+}
+
+.box-shadow-dark{
+  box-shadow: 4px 0px 6px -2px rgba(0,0,0,.5), 0 5px 8px 0 rgba(0,0,0,.12) !important;
+}
+
+.box-shadow{
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+}
+
+.box-shadow-light{
+  box-shadow: 1px 1px 2px 0px rgba(216,216,216,1);
+  -webkit-box-shadow: 1px 1px 2px 0px rgba(216,216,216,1);
+}
+
+.box-shadow-white{
+  -webkit-box-shadow: 0 2px 5px 0 rgba(255,255,255,.16), 0 2px 10px 0 rgba(255,255,255,.12);
+  box-shadow: 0 2px 5px 0 rgba(255,255,255,.16), 0 2px 10px 0 rgba(255,255,255,.12);
+}
+
+.no-box-shadow{
+  box-shadow: unset !important;
+}
+
+.home-border{
+  border: 1px solid #c77d48;
+}
+
+.bg-home-color{
+  background: #2b2b2b !important;
+}
+
+.bg-home-color:hover{
+  color: white !important;
+}
+
+.cl-home-color{
+  color: white !important;
+}
+
+.text-shadow{
+  text-shadow: 1px 1px 3px black;
+}
+
+.home-note{
+  background: #c77d48c7 !important;
+  color: white;
+  width: 100%;
+}
+
+.sign-btn{
+  background: white;
+  color: black;
+  border-radius: 0;
+}
+
+.home-color{
+  color: #c77d48;
+}
+
+.no-border{
+  border: unset;
+}
+
+.border-grey{
+  border: 1px solid grey;
+}
+
+.no-radius{
+  border-radius: 0 !important;
+}
+
+.home-shadow, .sign-btn{
+  box-shadow: -3px 3px 0px 2px #c77d48;
+}
+
+.home-text-shadow{
+  text-shadow: -3px 3px 0px #c77d48;
+}
+
+.btn-house{
+  background-color: #212121;
+  color: white !important;
+}
+
+.sign-btn:hover{
+  box-shadow: 0px 0px 0px 0px #bcbcbc !important;
+  transition: all 1s;
+  -webkit-transition: all 1s;
+}
+
+.dropdown-menu{
+  border-radius: 0;
+  box-shadow: -5px 5px 6px -7px black;
+}
+
+.footer-nav-link{
+  border-right: 1px solid #e8e8e8;
+  border-bottom: 1px solid white;
+}
+
+.footer-nav-link:last-child{
+  border-right: unset;
+}
+
+.footer-nav-link a{
+  position: relative;
+  top:0;
+}
+
+.footer-nav-link:hover{
+  background: #fbfbfb;
+  transition: all .5s;
+  -webkit-transition: all .5s;
+}
+
+.footer-nav-link:hover a{
+  color: black;
+  position: relative;
+  top: -5px;
+  transition: all .7s;
+  -webkit-transition: all .7s;
+}
+
+#my-file{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  padding: 14px 0;
+  cursor: pointer;
+}
+
+.radius-100{
+  border-radius: 100%;
+}
+
+.btn-black{
+  color: white !important;
+}
+
+.nav-tabs-user li{
+  overflow: visible;
+}
+
+.nav-tabs .nav-link.active{
+  color: #c77d48 !important;
+  border:1px solid #c77c48;
+  /*//border-color: #c77c48 #c77d48 #fff ;*/
+  border-radius: 0px;
+  font-size: 20px;
+}
+
+.nav-tabs .nav-link{
+  color: #212121;
+  font-size: 20px;
+  width: 140px;
+  text-align: center;
+  border-bottom: 1px solid #dee2e6;
+
+}
+
+.box-shadow-white{
+  -webkit-box-shadow: 0 2px 5px 0 rgba(216,216,216,.16), 0 2px 10px 0 rgba(216,216,216,.12);
+  box-shadow: 0 2px 5px 0 rgba(216,216,216,.16), 0 2px 10px 0 rgba(216,216,216,.12);
+}
+/* Half Page Carousel itself*/
+.carousel {
+  height: 50%; }
+  .carousel .carousel-inner {
+    height: 100%; }
+    .carousel .carousel-inner .carousel-item,
+    .carousel .carousel-inner .active {
+      height: 100%; }
+
+/* Adjustment for mobile devices*/
+@media (max-width: 776px) {
+  .carousel {
+    height: 100%; }
+  .battleCard{
+    width: 100% !important;
+  }
+}
+
+/* Navbar animation */
+.navbar {
+  background-color: rgba(0, 0, 0, 0.2); }
+
+.top-nav-collapse {
+  background-color: #212121; }
+
+/* Adding color to the Navbar on mobile */
+@media only screen and (max-width: 768px) {
+  .navbar {
+    background-color: #212121; }
+  .battleCard{
+    width: 100% !important;
+  }
+
+  .game-title{
+    font-size: 1em;
+  }
+
+  .game-content .text {
+    font-size: 20px;
+  }
+
+  .game-content .icon {
+    font-size: 40px;
+  }
+
+  .games-wrap{
+    height: 200px;
+  }
+
+}
+
+/* Devices with smaller tha 420px */
+@media (max-width: 420px) {
+
+  .games .game-title{
+    font-size: 11px;
+  }
+  .auth-header{
+    font-size: 2em;
+  }
+
+  ol.widgets li{
+    font-size: 11px !important;
+  }
+
+  #back-btn{
+    font-size: 11px !important;
+  }
+
+  .display-sm-none{
+    display: none !important;
+  }
+
+  ul.stepper .step:before{
+    height: 40px;
+    width: 40px;
+    font-size: 25px;
+  }
+
+  ul.stepper>.step:not(:last-of-type):after{
+    top: 3.7rem;
+    left: 20px;
+  }
+
+  ul.stepper .step-title{
+    padding: 1.7rem 2.75rem 1.5rem 4.2rem;
+    font-size: 20px;
+  }
+
+  ul.stepper .step-new-content {
+    margin-left: 21px;
+    margin-right: 24px;
+  }
+
+  ul.stepper .step-title:after{
+    font-size: 9px;
+  }
+
+  .big-select{
+    border-left: unset !important;
+  }
+
+  .user-menu-wrap{
+    font-size: 0;
+    margin-top: 1em;
+  }
+
+  .user-menu-icon{
+    font-size: 20px !important;
+  }
+
+  .user-menu-link{
+    font-size: 15px !important;
+  }
+
+  .games-it span{
+    font-size: 11px;
+  }
+
+  .rating-xs {
+    font-size: .75em;
+  }
+
+  #game-time{
+    font-size: 12px;
+  }
+}
+/* pl dashboard responsive */
+@media (max-width: 1199.98px){
+  .pl-dashboard{
+    padding-left: 0;
+  }
+}
+
+
+/* Footer color for sake of consistency with Navbar */
+.page-footer {
+  background-color: #929FBA; }
+

@@ -1,0 +1,144 @@
+/* Brown #c77d48 */
+
+.formReply{
+    display: none;
+}
+
+.comment-card:after {
+    content: "";
+    position: absolute;
+    box-shadow: rgba(0, 0, 0, 0.16) 3px 1px 3px;
+    -moz-transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    left: -9px;
+    top: 30px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent #FFF #FFF transparent;
+}
+
+.btn-like{
+    border: unset;
+    background: transparent;
+    color: grey;
+    margin: auto 2px;
+}
+
+.like-up:hover {
+    color: limegreen;
+}
+
+.like-down:hover {
+    color: red;
+}
+
+.games img{
+    object-fit: cover;
+    background: rgba(0,0,0,.2);
+}
+
+.btn-goldenrod{
+    border: 1px solid goldenrod;
+    background: goldenrod;
+    color: white;
+}
+
+.btn-goldenrod:hover{
+    background: white;
+    color: goldenrod;
+    transition: all .7s;
+    -webkit-transition: all .7s;
+}
+
+.auhour-img-wrap{
+    border: 5px solid white;
+}
+
+.games .game-title{
+    padding: .2em 1.5em;
+}
+
+#game-time h6, #game-time span{
+    margin-right: .5em !important;
+    margin-left: .5em !important;
+}
+
+.game-content{
+    background: #eee;
+    color: #212121;
+}
+
+
+.game-content .icon{
+    font-size: 60px;
+}
+
+.game-content .text{
+    font-size: 30px;
+}
+
+ol.widgets li {
+    display:inline;
+
+}
+
+ol.widgets li a{
+    color: unset !important;
+}
+
+ol.widgets li a:hover{
+    color: #c77d48 !important;
+}
+
+.widgets li:before{
+    content:'\25AA';
+    font-size: 20px;
+    margin-left:10px;
+    margin-right: 10px;
+}
+
+.widgets li:first-child:before{
+    display: none;
+}
+
+.games-wrap:hover{
+    transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transition: all .7s;
+
+}
+
+.game-icon{
+    font-size: 35px;
+    color: grey;
+}
+
+.game-p{
+    padding: 1em 1.5em;
+}
+
+.game-wrap-border{
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    padding: 1em 1.5em;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+.ownListGroup{
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12)
+}
+
+#userTable tr td{
+    vertical-align: middle;
+}
+
+.dataTables_info, .dataTables_paginate, .paging_simple_numbers {
+    margin-top: 1em;
+}
+
+.dataTables_paginate .current {
+    border: 0 !important;
+    background: #c77d48 !important;
+}

@@ -1,0 +1,22 @@
+/*  #c77d48 */
+
+.leaderCard .card-header, .leaderCard .card-body{
+    border: 1px solid #cccccc;
+}
+
+.leaderCard .card-body{
+    border-top: unset;
+}
+
+.winners-wrap .winners-img{
+    position: relative;
+    color: #529b25;
+}
+
+.winners-img .win-number{
+    font-size: 45px;
+}
+
+.winners-name{
+    color: #c77d48;
+}
